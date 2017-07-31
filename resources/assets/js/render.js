@@ -11,7 +11,12 @@ export default {
       let element = document.querySelector(component.selector());
 
       element.innerHTML = raw;
-      component.mounted();
+
+      component.methods = Object.assign({}, component.methods, component.data());
+
+      if (component.mounted) {
+        component.mounted.apply(Object.assign({}, component.methods));
+      }
     });
   }
 }
