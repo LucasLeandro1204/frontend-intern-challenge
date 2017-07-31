@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    padding: 60px 15px;
+  }
+}
+
+h1 {
+  font-size: 49px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 41px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 41px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}
