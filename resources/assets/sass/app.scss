@@ -17,6 +17,7 @@ section {
 
 h1 {
   font-size: 49px;
+  margin-bottom: 15px;
 }
 
 @import "partials/variables";
@@ -24,3 +25,4 @@ h1 {
 @import "partials/header";
 @import "partials/shortener";
 @import "partials/top";
+@import "partials/hits";

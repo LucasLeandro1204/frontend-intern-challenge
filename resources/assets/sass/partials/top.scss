@@ -1,15 +1,12 @@
 #top {
   color: $primary;
+  position: relative;
   text-align: center;
   background-color: $white;
 
   article {
     width: 100%;
     max-width: 550px;
-  }
-
-  h1 {
-    margin-bottom: 15px;
   }
 
   li {
@@ -27,5 +24,17 @@
     &:not(:last-child) {
       border-bottom: 1px solid $gray-lighter;
     }
+  }
+
+  &::after {
+    left: 50%;
+    content: '';
+    width: 100px;
+    height: 100px;
+    bottom: -100px;
+    position: absolute;
+    background-color: $white;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
   }
 }

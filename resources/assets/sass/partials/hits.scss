@@ -1,0 +1,20 @@
+#hits {
+  color: $primary;
+  padding: 30px 0 0;
+  text-align: center;
+  background-color: $gray-lighter;
+
+  h2 {
+    padding: 15px;
+    font-size: 41px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: $white;
+    border: 1px solid $gray-lighter +- 15%;
+  }
+
+  p {
+    color: $gray;
+    font-size: 18px;
+  }
+}
