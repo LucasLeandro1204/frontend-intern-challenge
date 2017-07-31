@@ -1,5 +1,7 @@
 .DS_Store
 .editorconfig
 
+mix-manifest.json
+
 /public
 /node_modules
