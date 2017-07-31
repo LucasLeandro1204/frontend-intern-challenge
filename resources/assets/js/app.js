@@ -1,0 +1,5 @@
+require('./ready.js');
+
+docReady(() => {
+
+});
