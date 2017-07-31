@@ -1,7 +1,6 @@
 #top {
   color: $primary;
   position: relative;
-  text-align: center;
   background-color: $white;
 
   article {
@@ -9,12 +8,28 @@
     max-width: 550px;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   li {
     display: flex;
     font-size: 18px;
+    padding: 0 15px;
     font-weight: 500;
-    padding: 15px 0;
-    justify-content: space-between;
+    align-items: center;
+
+    a {
+      flex: 100%;
+      color: $primary;
+      padding: 15px 0;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary + 15%;
+        text-decoration: none;
+      }
+    }
 
     span {
       color: $gray;
@@ -23,6 +38,10 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid $gray-lighter;
+    }
+
+    &:hover {
+      background-color: $white + -10%;
     }
   }
 
