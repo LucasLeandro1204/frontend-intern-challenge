@@ -1,24 +1,17 @@
 #shortener {
-  width: 100%;
-  display: flex;
   max-height: 900px;
   min-height: 100vh;
-  align-items: center;
   background-size: cover;
-  justify-content: center;
   background-position: center;
   background-image: url('/build/images/background-home.jpg');
 
   article {
     color: $white;
     max-width: 520px;
-    padding: 80px 15px;
     text-align: center;
   }
 
   h1 {
-    font-size: 49px;
-    font-weight: 700;
     margin-bottom: 15px;
   }
 
