@@ -1,0 +1,23 @@
+footer {
+  color: $primary;
+
+  .container {
+    padding: 15px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 980px;
+    align-items: center;
+  }
+
+  .links {
+    margin-left: auto;
+
+    a {
+      margin-left: 15px;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  }
+}

@@ -20,9 +20,14 @@ h1 {
   margin-bottom: 15px;
 }
 
+h2 {
+  font-size: 41px;
+}
+
 @import "partials/variables";
 
 @import "partials/header";
 @import "partials/shortener";
 @import "partials/top";
 @import "partials/hits";
+@import "partials/footer";
