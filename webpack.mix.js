@@ -1,4 +1,5 @@
-const { mix } = require('laravel-mix');
+const mix  = require('laravel-mix');
+const path = require('path');
 
 const resources = {
   views: 'resources/views/',
