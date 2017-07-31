@@ -1,0 +1,100 @@
+#shortener {
+  width: 100%;
+  display: flex;
+  max-height: 900px;
+  min-height: 100vh;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  background-image: url('/build/images/background-home.jpg');
+
+  article {
+    color: $white;
+    max-width: 520px;
+    padding: 80px 15px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  input,
+  button {
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 300ms;
+  }
+
+  button {
+    color: $white;
+    cursor: pointer;
+  }
+
+  .input-wrapper {
+    flex: 1;
+    margin-right: 15px;
+    position: relative;
+    border-bottom: 2px solid $orange;
+
+    button {
+      top: 50%;
+      right: 5px;
+      display: none;
+      background: none;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
+
+  input {
+    color: $orange;
+    background: none;
+    width: calc(100% - 35px);
+    padding: 10px 35px 10px 0;
+
+    &::placeholder {
+      color: $orange;
+    }
+
+    &:focus {
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  button[type="button"] {
+    padding: 0 20px;
+    background-color: $orange;
+
+    &:hover {
+      background-color: $orange + -15%;
+    }
+  }
+
+  .shortener-field {
+    display: flex;
+
+    &.active {
+      input {
+        color: $white;
+      }
+
+      .input-wrapper {
+        button {
+          display: inherit;
+        }
+      }
+    }
+  }
+}
