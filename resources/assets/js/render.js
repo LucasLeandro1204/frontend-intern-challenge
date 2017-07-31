@@ -7,8 +7,11 @@ export default {
 
   go () {
     this.components.forEach((component) => {
+      let raw = component.template.apply(Object.assign({}, component.methods, component.data()))
       let element = document.querySelector(component.selector());
-      element.innerHTML = component.template.apply(Object.assign({}, component.methods, component.data()));
+
+      element.innerHTML = raw;
+      component.mounted();
     });
   }
 }
